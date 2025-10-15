@@ -15,9 +15,9 @@ export const metadata = {
   title: "Nicholas - Personal Website",
   description: "Personal website and portfolio",
   icons: {
-    icon: "/icon.svg",
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
+    icon: "../public/glitch-star.png",
+    shortcut: "../public/glitch-star.png",
+    apple: "../public/glitch-star.png",
   },
 };
 
