@@ -9,7 +9,7 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3">
               <Logo size="small" />
-              <h1 className="text-xl font-medium glitch-text">Nicholas</h1>
+              <h1 className="text-xl font-medium glitch-text">k0ncept</h1>
             </div>
             <div className="flex space-x-8">
               <a
@@ -42,7 +42,7 @@ export default function Home() {
             <Logo size="xlarge" className="animate-pulse" />
           </div>
           <h2 className="text-5xl font-light mb-6 glitch-text">
-            Hello, I'm Nicholas
+            Hello, I'm k0ncept
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
             I build things for the web. Currently focused on creating simple,
@@ -125,23 +125,23 @@ export default function Home() {
           </p>
           <div className="space-y-3">
             <a
-              href="mailto:hello@nicholas.com"
+              href="mailto:k0nceptx0@gmail.com"
               className="block text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
-              hello@nicholas.com
+              k0nceptx0@gmail.com
             </a>
             <a
-              href="https://github.com/nicholas"
+              href="https://github.com/k0ncept"
               className="block text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
               GitHub
             </a>
-            <a
+            {/* <a
               href="https://linkedin.com/in/nicholas"
               className="block text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
               LinkedIn
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
