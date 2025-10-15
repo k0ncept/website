@@ -79,14 +79,14 @@ export default function Home() {
           <div className="border-l-2 border-gray-200 dark:border-gray-800 pl-6">
             <h4 className="text-xl font-medium mb-2">Coming Soon</h4>
             <p className="text-gray-600 dark:text-gray-400 mb-3">
-              Working on something exciting. Stay tuned for updates.
+              Coming soon
             </p>
           </div>
 
           <div className="border-l-2 border-gray-200 dark:border-gray-800 pl-6">
             <h4 className="text-xl font-medium mb-2">Coming Soon</h4>
             <p className="text-gray-600 dark:text-gray-400 mb-3">
-              Another project in development. More details coming soon.
+              Coming soonish
             </p>
           </div>
         </div>
