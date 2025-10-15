@@ -44,7 +44,7 @@ export default function Home() {
               Hi, I'm kon
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed text-left">
-              Generalist and product engineer.
+              Generalist, product engineer, and meme specialist.
             </p>
           </div>
 
