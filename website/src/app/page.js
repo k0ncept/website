@@ -41,11 +41,10 @@ export default function Home() {
           {/* Left side - Text content */}
           <div className="flex-1 max-w-2xl">
             <h2 className="text-5xl font-light mb-6 glitch-text text-left">
-              Hello, I'm k0ncept
+              Hi, I'm kon
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed text-left">
-              I build things for the web. Currently focused on creating simple,
-              elegant solutions to complex problems.
+              Generalist and product engineer.
             </p>
           </div>
 
@@ -65,12 +64,11 @@ export default function Home() {
         <div className="prose prose-gray dark:prose-invert max-w-none">
           <p className="text-lg leading-relaxed mb-6">
             I'm rebuilding my career and diving into all things AI. Currently
-            focused on shipping new projects and building things that matter.
+            focused on shipping new projects.
           </p>
-          <p className="text-lg leading-relaxed">
-            You'll find my latest work and experiments right here as I continue
-            to grow and push the boundaries of what's possible on the web.
-          </p>
+          {/* <p className="text-lg leading-relaxed">
+     
+          </p> */}
         </div>
       </section>
 
@@ -98,7 +96,6 @@ export default function Home() {
       <section id="contact" className="max-w-4xl mx-auto px-6 py-16">
         <h3 className="text-3xl font-light mb-8">Contact</h3>
         <div className="max-w-md">
-     
           <div className="space-y-3">
             <a
               href="https://x.com/k0ncept"
