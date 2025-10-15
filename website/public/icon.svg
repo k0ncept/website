@@ -1,0 +1,42 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glitch">
+      <feOffset in="SourceGraphic" dx="1" dy="0" result="red">
+        <animate attributeName="dx" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+      </feOffset>
+      <feOffset in="SourceGraphic" dx="-1" dy="1" result="blue">
+        <animate attributeName="dx" values="0;-1;0" dur="0.7s" repeatCount="indefinite"/>
+      </feOffset>
+      <feMerge>
+        <feMergeNode in="red"/>
+        <feMergeNode in="blue"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="32" height="32" fill="#000000"/>
+  
+  <!-- Main Star -->
+  <path d="M16 2L19.5 12.5L30 16L19.5 19.5L16 30L12.5 19.5L2 16L12.5 12.5L16 2Z" 
+        fill="white" 
+        opacity="0.9"
+        filter="url(#glitch)"/>
+  
+  <!-- Chromatic aberration layers -->
+  <path d="M16 2L19.5 12.5L30 16L19.5 19.5L16 30L12.5 19.5L2 16L12.5 12.5L16 2Z" 
+        fill="#ff0000" 
+        opacity="0.4"
+        transform="translate(1, 0)"/>
+  
+  <path d="M16 2L19.5 12.5L30 16L19.5 19.5L16 30L12.5 19.5L2 16L12.5 12.5L16 2Z" 
+        fill="#0000ff" 
+        opacity="0.4"
+        transform="translate(-1, 1)"/>
+  
+  <path d="M16 2L19.5 12.5L30 16L19.5 19.5L16 30L12.5 19.5L2 16L12.5 12.5L16 2Z" 
+        fill="#00ff00" 
+        opacity="0.3"
+        transform="translate(0, -1)"/>
+</svg>
