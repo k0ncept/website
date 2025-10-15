@@ -36,18 +36,26 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="max-w-4xl mx-auto px-6 py-24">
-        <div className="text-center">
-          <div className="flex justify-center mb-8">
-            <Logo size="xlarge" className="animate-pulse" />
+      <section className="max-w-6xl mx-auto px-6 py-24 relative">
+        <div className="flex items-center justify-between min-h-[400px]">
+          {/* Left side - Text content */}
+          <div className="flex-1 max-w-2xl">
+            <h2 className="text-5xl font-light mb-6 glitch-text text-left">
+              Hello, I'm k0ncept
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed text-left">
+              I build things for the web. Currently focused on creating simple,
+              elegant solutions to complex problems.
+            </p>
           </div>
-          <h2 className="text-5xl font-light mb-6 glitch-text">
-            Hello, I'm k0ncept
-          </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            I build things for the web. Currently focused on creating simple,
-            elegant solutions to complex problems.
-          </p>
+
+          {/* Right side - Large background logo */}
+          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 opacity-20 dark:opacity-30">
+            <Logo
+              size="xlarge"
+              className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 animate-pulse"
+            />
+          </div>
         </div>
       </section>
 
@@ -56,13 +64,12 @@ export default function Home() {
         <h3 className="text-3xl font-light mb-8">About</h3>
         <div className="prose prose-gray dark:prose-invert max-w-none">
           <p className="text-lg leading-relaxed mb-6">
-            I'm a developer with a passion for clean code and thoughtful design.
-            I believe in the power of simplicity and the importance of user
-            experience.
+            I'm rebuilding my career and diving into all things AI. Currently
+            focused on shipping new projects and building things that matter.
           </p>
           <p className="text-lg leading-relaxed">
-            When I'm not coding, you can find me exploring new technologies,
-            reading, or enjoying the outdoors.
+            You'll find my latest work and experiments right here as I continue
+            to grow and push the boundaries of what's possible on the web.
           </p>
         </div>
       </section>
@@ -72,45 +79,17 @@ export default function Home() {
         <h3 className="text-3xl font-light mb-8">Work</h3>
         <div className="space-y-8">
           <div className="border-l-2 border-gray-200 dark:border-gray-800 pl-6">
-            <h4 className="text-xl font-medium mb-2">Project Title</h4>
+            <h4 className="text-xl font-medium mb-2">Coming Soon</h4>
             <p className="text-gray-600 dark:text-gray-400 mb-3">
-              Brief description of the project and technologies used.
+              Working on something exciting. Stay tuned for updates.
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-sm text-gray-500 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
-              >
-                Live Demo
-              </a>
-              <a
-                href="#"
-                className="text-sm text-gray-500 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
-              >
-                Source Code
-              </a>
-            </div>
           </div>
 
           <div className="border-l-2 border-gray-200 dark:border-gray-800 pl-6">
-            <h4 className="text-xl font-medium mb-2">Another Project</h4>
+            <h4 className="text-xl font-medium mb-2">Coming Soon</h4>
             <p className="text-gray-600 dark:text-gray-400 mb-3">
-              Another brief description of a project you've worked on.
+              Another project in development. More details coming soon.
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-sm text-gray-500 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
-              >
-                Live Demo
-              </a>
-              <a
-                href="#"
-                className="text-sm text-gray-500 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
-              >
-                Source Code
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -119,16 +98,18 @@ export default function Home() {
       <section id="contact" className="max-w-4xl mx-auto px-6 py-16">
         <h3 className="text-3xl font-light mb-8">Contact</h3>
         <div className="max-w-md">
-          <p className="text-lg leading-relaxed mb-6">
-            I'm always interested in hearing about new opportunities and
-            interesting projects.
-          </p>
+     
           <div className="space-y-3">
             <a
-              href="mailto:k0nceptx0@gmail.com"
-              className="block text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+              href="https://x.com/k0ncept"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
-              k0nceptx0@gmail.com
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+              <span>DM me on X</span>
             </a>
             <a
               href="https://github.com/k0ncept"
