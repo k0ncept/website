@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Logo({ className = "", size = "default" }) {
   const sizeClasses = {
     small: "w-6 h-6",
@@ -11,12 +9,13 @@ export default function Logo({ className = "", size = "default" }) {
 
   return (
     <div className={`${sizeClasses[size]} ${className} relative`}>
-      <Image
-        src="/glitch-star.png"
-        alt="Glitch Star Logo"
-        fill
-        className="object-contain"
-        priority
+      <video
+        src="/kon-star-spin-loop.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-contain"
       />
     </div>
   );
