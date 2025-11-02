@@ -9,7 +9,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata = {
-  title: "Nicholas - Personal Website",
+  title: "Koncept - Personal Website",
   description: "Personal website and portfolio",
   icons: {
     icon: "/glitch-star.png",
