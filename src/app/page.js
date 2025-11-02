@@ -30,17 +30,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="max-w-4xl mx-auto px-6 py-16 w-full">
-        <h3 className="text-3xl font-light mb-8 font-mono">ABOUT</h3>
-        <div className="max-w-2xl">
-          <p className="text-base md:text-lg leading-relaxed font-mono">
-            I'm rebuilding my career and diving into all things AI. Currently
-            focused on shipping new projects.
-          </p>
-        </div>
-      </section>
-
       {/* Projects Section */}
       <section id="projects" className="max-w-4xl mx-auto px-6 py-16 w-full">
         <h3 className="text-3xl font-light mb-8 font-mono">PROJECTS</h3>
