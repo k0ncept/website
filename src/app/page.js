@@ -36,23 +36,23 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-6 py-24 relative">
+      <section className="max-w-4xl mx-auto px-6 py-24 relative">
         <div className="flex items-center justify-between min-h-[400px]">
           {/* Left side - Text content */}
-          <div className="flex-1 max-w-2xl">
-            <h2 className="text-5xl font-light mb-6 glitch-text text-left">
+          <div className="flex-1 max-w-3xl pr-64 md:pr-80 lg:pr-96">
+            <h2 className="text-5xl font-light mb-6 glitch-text text-left break-words">
               Hi, I'm kon
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed text-left">
+            <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed text-left break-words">
               Generalist, product engineer, and meme specialist.
             </p>
           </div>
 
           {/* Right side - Large background logo */}
-          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 opacity-20 dark:opacity-30">
+          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 opacity-20 dark:opacity-69 pointer-events-none">
             <Logo
               size="xlarge"
-              className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 animate-pulse"
+              className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96"
             />
           </div>
         </div>
@@ -78,9 +78,7 @@ export default function Home() {
         <div className="space-y-8">
           <div className="border-l-2 border-gray-200 dark:border-gray-800 pl-6">
             <h4 className="text-xl font-medium mb-2">Coming Soon</h4>
-            <p className="text-gray-600 dark:text-gray-400 mb-3">
-              Coming soon
-            </p>
+            <p className="text-gray-600 dark:text-gray-400 mb-3">Coming soon</p>
           </div>
 
           <div className="border-l-2 border-gray-200 dark:border-gray-800 pl-6">
@@ -128,7 +126,7 @@ export default function Home() {
       <footer className="border-t border-gray-200 dark:border-gray-800 mt-16">
         <div className="max-w-4xl mx-auto px-6 py-8">
           <p className="text-center text-gray-500 dark:text-gray-500">
-            © {new Date().getFullYear()} Nicholas. All rights reserved.
+            © {new Date().getFullYear()} Kon. All rights reserved.
           </p>
         </div>
       </footer>
