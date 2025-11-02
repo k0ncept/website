@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #ffffff;
   }
 }
 
@@ -200,6 +200,42 @@ html {
 /* Subtle glitch effect for headings */
 .glitch-text {
   animation: glitch 3s infinite;
+}
+
+/* Glitch effect with purple instead of blue for KØNCEPT */
+@keyframes glitch-purple {
+  0% {
+    text-shadow: 0.05em 0 0 #ff0000, -0.05em -0.025em 0 #00ff00,
+      0.025em 0.05em 0 #9d4edd;
+  }
+  15% {
+    text-shadow: 0.05em 0 0 #ff0000, -0.05em -0.025em 0 #00ff00,
+      0.025em 0.05em 0 #9d4edd;
+  }
+  16% {
+    text-shadow: -0.05em -0.025em 0 #ff0000, 0.025em 0.025em 0 #00ff00,
+      -0.05em -0.05em 0 #9d4edd;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #ff0000, 0.025em 0.025em 0 #00ff00,
+      -0.05em -0.05em 0 #9d4edd;
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 #ff0000, 0.05em 0 0 #00ff00,
+      0 -0.05em 0 #9d4edd;
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 #ff0000, 0.05em 0 0 #00ff00,
+      0 -0.05em 0 #9d4edd;
+  }
+  100% {
+    text-shadow: -0.025em 0 0 #ff0000, -0.025em -0.025em 0 #00ff00,
+      -0.025em -0.05em 0 #9d4edd;
+  }
+}
+
+.glitch-text-purple {
+  animation: glitch-purple 3s infinite;
 }
 
 /* Cyberpunk accent colors */

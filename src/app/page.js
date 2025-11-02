@@ -2,104 +2,71 @@ import Logo from "../components/Logo";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      {/* Navigation */}
-      <nav className="border-b border-gray-200 dark:border-gray-800">
-        <div className="max-w-4xl mx-auto px-6 py-4">
-          <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-3">
-              <Logo size="small" />
-              <h1 className="text-xl font-medium glitch-text">k0ncept</h1>
-            </div>
-            <div className="flex space-x-8">
-              <a
-                href="#about"
-                className="text-gray-600 dark:text-gray-400 hover:text-cyan-400 transition-colors"
-              >
-                About
-              </a>
-              <a
-                href="#work"
-                className="text-gray-600 dark:text-gray-400 hover:text-fuchsia-400 transition-colors"
-              >
-                Work
-              </a>
-              <a
-                href="#contact"
-                className="text-gray-600 dark:text-gray-400 hover:text-green-400 transition-colors"
-              >
-                Contact
-              </a>
-            </div>
-          </div>
+    <div className="min-h-screen bg-black text-white">
+      {/* Hero Section - Centered */}
+      <section className="min-h-screen flex flex-col items-center justify-center px-6">
+        {/* Logo - Top Center */}
+        <div className="mb-12">
+          <Logo
+            size="xlarge"
+            className="glitch-text w-[320px] h-[320px] md:w-[400px] md:h-[400px]"
+          />
         </div>
-      </nav>
 
-      {/* Hero Section */}
-      <section className="max-w-4xl mx-auto px-6 py-24 relative">
-        <div className="flex items-center justify-between min-h-[400px]">
-          {/* Left side - Text content */}
-          <div className="flex-1 max-w-3xl pr-64 md:pr-80 lg:pr-96">
-            <h2 className="text-5xl font-light mb-6 glitch-text text-left break-words">
-              Hi, I'm kon
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed text-left break-words">
-              Generalist, product engineer, and meme specialist.
-            </p>
-          </div>
+        {/* Main Title - KØNCEPT */}
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-6 glitch-text text-center">
+          KØNCEPT
+        </h1>
 
-          {/* Right side - Large background logo */}
-          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 opacity-20 dark:opacity-69 pointer-events-none">
-            <Logo
-              size="xlarge"
-              className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96"
-            />
-          </div>
-        </div>
+        {/* Role Text */}
+        <p className="text-base md:text-lg mb-8 text-center font-mono tracking-wide">
+          GENERALIST // PRODUCT ENGINEER // MEME SPECIALIST
+        </p>
+
+        {/* About Paragraph */}
+        <p className="text-base md:text-lg max-w-2xl text-center font-mono leading-relaxed">
+          REBUILDING MY CAREER AND DIVING INTO ALL THINGS AI. CURRENTLY FOCUSED
+          ON SHIPPING NEW PROJECTS.
+        </p>
       </section>
 
       {/* About Section */}
-      <section id="about" className="max-w-4xl mx-auto px-6 py-16">
-        <h3 className="text-3xl font-light mb-8">About</h3>
-        <div className="prose prose-gray dark:prose-invert max-w-none">
-          <p className="text-lg leading-relaxed mb-6">
+      <section id="about" className="max-w-4xl mx-auto px-6 py-16 w-full">
+        <h3 className="text-3xl font-light mb-8 font-mono">ABOUT</h3>
+        <div className="max-w-2xl">
+          <p className="text-base md:text-lg leading-relaxed font-mono">
             I'm rebuilding my career and diving into all things AI. Currently
             focused on shipping new projects.
           </p>
-          {/* <p className="text-lg leading-relaxed">
-     
-          </p> */}
         </div>
       </section>
 
-      {/* Work Section */}
-      <section id="work" className="max-w-4xl mx-auto px-6 py-16">
-        <h3 className="text-3xl font-light mb-8">Work</h3>
+      {/* Projects Section */}
+      <section id="projects" className="max-w-4xl mx-auto px-6 py-16 w-full">
+        <h3 className="text-3xl font-light mb-8 font-mono">PROJECTS</h3>
         <div className="space-y-8">
-          <div className="border-l-2 border-gray-200 dark:border-gray-800 pl-6">
-            <h4 className="text-xl font-medium mb-2">Coming Soon</h4>
-            <p className="text-gray-600 dark:text-gray-400 mb-3">Coming soon</p>
+          <div className="border-l-2 border-gray-700 pl-6">
+            <h4 className="text-xl font-medium mb-2 font-mono">Coming Soon</h4>
+            <p className="text-gray-400 mb-3 font-mono">Coming soon</p>
           </div>
 
-          <div className="border-l-2 border-gray-200 dark:border-gray-800 pl-6">
-            <h4 className="text-xl font-medium mb-2">Coming Soon</h4>
-            <p className="text-gray-600 dark:text-gray-400 mb-3">
-              Coming soonish
-            </p>
+          <div className="border-l-2 border-gray-700 pl-6">
+            <h4 className="text-xl font-medium mb-2 font-mono">Coming Soon</h4>
+            <p className="text-gray-400 mb-3 font-mono">Coming soonish</p>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="max-w-4xl mx-auto px-6 py-16">
-        <h3 className="text-3xl font-light mb-8">Contact</h3>
+      <section id="contact" className="max-w-4xl mx-auto px-6 py-16 w-full">
+        <h3 className="text-3xl font-light mb-8 font-mono">CONTACT</h3>
         <div className="max-w-md">
-          <div className="space-y-3">
+          <div className="space-y-3 font-mono">
             <a
               href="https://x.com/k0ncept"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+              className="flex items-center space-x-2 text-white hover:text-gray-400 transition-colors"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -108,28 +75,13 @@ export default function Home() {
             </a>
             <a
               href="https://github.com/k0ncept"
-              className="block text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+              className="block text-white hover:text-gray-400 transition-colors"
             >
               GitHub
             </a>
-            {/* <a
-              href="https://linkedin.com/in/nicholas"
-              className="block text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
-            >
-              LinkedIn
-            </a> */}
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="border-t border-gray-200 dark:border-gray-800 mt-16">
-        <div className="max-w-4xl mx-auto px-6 py-8">
-          <p className="text-center text-gray-500 dark:text-gray-500">
-            © {new Date().getFullYear()} Kon. All rights reserved.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }
