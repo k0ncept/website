@@ -24,10 +24,10 @@ export default function Home() {
         </p>
 
         {/* About Paragraph */}
-        <p className="text-base md:text-lg max-w-2xl text-center font-mono leading-relaxed">
+        {/* <p className="text-base md:text-lg max-w-2xl text-center font-mono leading-relaxed">
           REBUILDING MY CAREER AND DIVING INTO ALL THINGS AI. CURRENTLY FOCUSED
           ON SHIPPING NEW PROJECTS.
-        </p>
+        </p> */}
       </section>
 
       {/* Projects Section */}
