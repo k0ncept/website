@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      evasive-button:
+        specifier: file:/Users/nicholas/Downloads/evasive-button-0.1.0.tgz
+        version: file:../../Downloads/evasive-button-0.1.0.tgz
       next:
         specifier: 15.3.8
         version: 15.3.8(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -346,6 +349,10 @@ packages:
   enhanced-resolve@5.18.3:
     resolution: {integrity: sha512-d4lC8xfavMeBjzGr2vECC3fsGXziXZQyJxD868h2M/mBI3PwAuODxAkLkq5HYuvrPYcUtiLzsTo8U3PgX3Ocww==}
     engines: {node: '>=10.13.0'}
+
+  evasive-button@file:../../Downloads/evasive-button-0.1.0.tgz:
+    resolution: {integrity: sha512-2f5uNP1fV0S+Q+hUF3EqDTgbhGeabPnwFKB1HngZmwHvs8I/ci+oPuW+OEnQyfJazv87tLzWHzZQnAE0RJ2O+Q==, tarball: file:../../Downloads/evasive-button-0.1.0.tgz}
+    version: 0.1.0
 
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
@@ -767,6 +774,8 @@ snapshots:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.3.0
+
+  evasive-button@file:../../Downloads/evasive-button-0.1.0.tgz: {}
 
   graceful-fs@4.2.11: {}
 

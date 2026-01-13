@@ -35,13 +35,22 @@ export default function Home() {
         <h3 className="text-3xl font-light mb-8 font-mono">PROJECTS</h3>
         <div className="space-y-8">
           <div className="border-l-2 border-gray-700 pl-6">
-            <h4 className="text-xl font-medium mb-2 font-mono">Coming Soon</h4>
-            <p className="text-gray-400 mb-3 font-mono">Coming soon</p>
+            <a
+              href="/meme-holster"
+              className="block hover:text-gray-300 transition-colors"
+            >
+              <h4 className="text-xl font-medium mb-2 font-mono">
+                Meme Holster
+              </h4>
+              <p className="text-gray-400 mb-3 font-mono">
+                macOS app for quick meme access
+              </p>
+            </a>
           </div>
 
           <div className="border-l-2 border-gray-700 pl-6">
             <h4 className="text-xl font-medium mb-2 font-mono">Coming Soon</h4>
-            <p className="text-gray-400 mb-3 font-mono">Coming soonish</p>
+            <p className="text-gray-400 mb-3 font-mono">Coming soon</p>
           </div>
         </div>
       </section>

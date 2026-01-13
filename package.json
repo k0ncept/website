@@ -8,9 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "evasive-button": "file:/Users/nicholas/Downloads/evasive-button-0.1.0.tgz",
+    "next": "15.3.8",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.3.8"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
