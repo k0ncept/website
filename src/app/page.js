@@ -23,18 +23,13 @@ export default function Home() {
           GENERALIST // PRODUCT ENGINEER // MEME SPECIALIST
         </p>
 
-        {/* About Paragraph */}
-        {/* <p className="text-base md:text-lg max-w-2xl text-center font-mono leading-relaxed">
-          REBUILDING MY CAREER AND DIVING INTO ALL THINGS AI. CURRENTLY FOCUSED
-          ON SHIPPING NEW PROJECTS.
-        </p> */}
       </section>
 
       {/* Projects Section */}
       <section id="projects" className="max-w-4xl mx-auto px-6 py-16 w-full">
         <h3 className="text-3xl font-light mb-8 font-mono">PROJECTS</h3>
         <div className="space-y-8">
-          <div className="border-l-2 border-gray-700 pl-6">
+          {/* <div className="border-l-2 border-gray-700 pl-6">
             <a
               href="/meme-holster"
               className="block hover:text-gray-300 transition-colors"
@@ -46,6 +41,10 @@ export default function Home() {
                 macOS app for quick meme access
               </p>
             </a>
+          </div> */}
+           <div className="border-l-2 border-gray-700 pl-6">
+            <h4 className="text-xl font-medium mb-2 font-mono">Coming Soon</h4>
+            <p className="text-gray-400 mb-3 font-mono">Coming soon</p>
           </div>
 
           <div className="border-l-2 border-gray-700 pl-6">

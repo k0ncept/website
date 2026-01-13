@@ -1,35 +1,7 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 
 export default function MemeHolsterPage() {
-  const [isDownloading, setIsDownloading] = useState(false);
-
-  const handleDownload = async (e) => {
-    e.preventDefault();
-    setIsDownloading(true);
-
-    try {
-      const response = await fetch("/meme-holster.dmg");
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "meme-holster.dmg";
-      document.body.appendChild(a);
-      a.click();
-      window.URL.revokeObjectURL(url);
-      document.body.removeChild(a);
-    } catch (error) {
-      console.error("Download failed:", error);
-      // Fallback to direct link
-      window.location.href = "/meme-holster.dmg";
-    } finally {
-      setTimeout(() => setIsDownloading(false), 2000);
-    }
-  };
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
@@ -55,8 +27,8 @@ export default function MemeHolsterPage() {
         </div>
 
         {/* App Icon and Download Section */}
-        <div className="mb-16 flex flex-col md:flex-row items-start md:items-center gap-8">
-          {/* App Icon */}
+        {/* <div className="mb-16 flex flex-col md:flex-row items-start md:items-center gap-8">
+
           <div className="flex-shrink-0">
             <div className="w-32 h-32 bg-black relative">
               <Image
@@ -67,15 +39,14 @@ export default function MemeHolsterPage() {
                 className="object-contain"
               />
             </div>
-          </div>
+          </div> */}
 
           {/* Download Button */}
           <div className="flex-1">
             <a
               href="/meme-holster.dmg"
               download="meme-holster.dmg"
-              onClick={handleDownload}
-              className="inline-flex items-center gap-2 px-8 py-4 text-white hover:text-gray-400 transition-colors font-mono rounded-lg border border-gray-700 hover:border-gray-600"
+              className="inline-flex items-center gap-2 px-8 py-4 text-white hover:text-gray-400 transition-colors font-mono rounded-lg border border-gray-700 hover:border-gray-600 cursor-pointer"
             >
               <svg
                 className="w-5 h-5"
@@ -90,7 +61,7 @@ export default function MemeHolsterPage() {
                   d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                 />
               </svg>
-              {isDownloading ? "Downloading..." : "Download"}
+              Download
             </a>
           </div>
         </div>
