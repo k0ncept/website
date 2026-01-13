@@ -1,7 +1,35 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function MemeHolsterPage() {
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const handleDownload = async (e) => {
+    e.preventDefault();
+    setIsDownloading(true);
+
+    try {
+      const response = await fetch("/meme-holster.dmg");
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "meme-holster.dmg";
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } catch (error) {
+      console.error("Download failed:", error);
+      // Fallback to direct link
+      window.location.href = "/meme-holster.dmg";
+    } finally {
+      setTimeout(() => setIsDownloading(false), 2000);
+    }
+  };
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
@@ -45,7 +73,8 @@ export default function MemeHolsterPage() {
           <div className="flex-1">
             <a
               href="/meme-holster.dmg"
-              download
+              download="meme-holster.dmg"
+              onClick={handleDownload}
               className="inline-flex items-center gap-2 px-8 py-4 text-white hover:text-gray-400 transition-colors font-mono rounded-lg border border-gray-700 hover:border-gray-600"
             >
               <svg
@@ -61,7 +90,7 @@ export default function MemeHolsterPage() {
                   d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                 />
               </svg>
-              Download
+              {isDownloading ? "Downloading..." : "Download"}
             </a>
           </div>
         </div>
