@@ -44,7 +44,7 @@ export default function MemeHolsterPage() {
         {/* Download Button */}
         <div className="mb-16">
           <a
-            href="/meme-holster.dmg"
+            href="/Meme Holster_1.0.0_aarch64.dmg"
             download="meme-holster.dmg"
             className="inline-flex items-center gap-2 px-8 py-4 text-white hover:text-gray-400 transition-colors font-mono rounded-lg border border-gray-700 hover:border-gray-600 cursor-pointer"
           >
@@ -95,7 +95,6 @@ export default function MemeHolsterPage() {
             </div>
           </div>
         </section>
-
         {/* Video Section */}
         <section>
           <h2 className="text-2xl font-light mb-6 font-mono">DEMO</h2>
