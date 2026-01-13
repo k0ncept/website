@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "vercel-build": "pnpm install && next build"
   },
   "dependencies": {
     "evasive-button": "file:./local-packages/evasive-button-0.1.0.tgz",
